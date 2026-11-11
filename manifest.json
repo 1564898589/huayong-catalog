@@ -1,0 +1,689 @@
+{
+  "company": "南京华用电气",
+  "title": "产品手册",
+  "siteUrl": "",
+  "generated": "2026-11-11T06:36:15.790Z",
+  "total": 66,
+  "totalSizeText": "64.2 MB",
+  "categoryCount": 14,
+  "categories": [
+    {
+      "name": "变送器",
+      "count": 1,
+      "products": [
+        {
+          "title": "TS温度变送器",
+          "model": "TS",
+          "name": "温度变送器",
+          "file": "TS温度变送器.pdf",
+          "path": "pdfs/变送器/TS温度变送器.pdf",
+          "size": 368649,
+          "sizeText": "360 KB"
+        }
+      ]
+    },
+    {
+      "name": "变压器",
+      "count": 1,
+      "products": [
+        {
+          "title": "XF变压器",
+          "model": "XF",
+          "name": "变压器",
+          "file": "XF变压器.pdf",
+          "path": "pdfs/变压器/XF变压器.pdf",
+          "size": 932342,
+          "sizeText": "910 KB"
+        }
+      ]
+    },
+    {
+      "name": "测试模块",
+      "count": 1,
+      "products": [
+        {
+          "title": "TB系列测试模块",
+          "model": "TB",
+          "name": "系列测试模块",
+          "file": "TB系列测试模块.pdf",
+          "path": "pdfs/测试模块/TB系列测试模块.pdf",
+          "size": 183943,
+          "sizeText": "180 KB"
+        }
+      ]
+    },
+    {
+      "name": "单位置继电器",
+      "count": 8,
+      "products": [
+        {
+          "title": "RAI-V直流负载专用抗干扰中间继电器",
+          "model": "RAI-V",
+          "name": "直流负载专用抗干扰中间继电器",
+          "file": "RAI-V直流负载专用抗干扰中间继电器.pdf",
+          "path": "pdfs/单位置继电器/RAI-V直流负载专用抗干扰中间继电器.pdf",
+          "size": 925985,
+          "sizeText": "904 KB"
+        },
+        {
+          "title": "RAI抗干扰中间继电器",
+          "model": "RAI",
+          "name": "抗干扰中间继电器",
+          "file": "RAI抗干扰中间继电器.pdf",
+          "path": "pdfs/单位置继电器/RAI抗干扰中间继电器.pdf",
+          "size": 1313373,
+          "sizeText": "1.3 MB"
+        },
+        {
+          "title": "RC-F快速中间继电器",
+          "model": "RC-F",
+          "name": "快速中间继电器",
+          "file": "RC-F快速中间继电器.pdf",
+          "path": "pdfs/单位置继电器/RC-F快速中间继电器.pdf",
+          "size": 1925301,
+          "sizeText": "1.8 MB"
+        },
+        {
+          "title": "RC-M继电器模组",
+          "model": "RC-M",
+          "name": "继电器模组",
+          "file": "RC-M继电器模组.pdf",
+          "path": "pdfs/单位置继电器/RC-M继电器模组.pdf",
+          "size": 1083772,
+          "sizeText": "1.0 MB"
+        },
+        {
+          "title": "RC-P可插拔中间继电器",
+          "model": "RC-P",
+          "name": "可插拔中间继电器",
+          "file": "RC-P可插拔中间继电器.pdf",
+          "path": "pdfs/单位置继电器/RC-P可插拔中间继电器.pdf",
+          "size": 1044043,
+          "sizeText": "1020 KB"
+        },
+        {
+          "title": "RC-PTCD单位置PT重动继电器",
+          "model": "RC-PTCD",
+          "name": "单位置PT重动继电器",
+          "file": "RC-PTCD单位置PT重动继电器.pdf",
+          "path": "pdfs/单位置继电器/RC-PTCD单位置PT重动继电器.pdf",
+          "size": 922221,
+          "sizeText": "901 KB"
+        },
+        {
+          "title": "RC-V直流负载专用中间继电器",
+          "model": "RC-V",
+          "name": "直流负载专用中间继电器",
+          "file": "RC-V直流负载专用中间继电器.pdf",
+          "path": "pdfs/单位置继电器/RC-V直流负载专用中间继电器.pdf",
+          "size": 1077969,
+          "sizeText": "1.0 MB"
+        },
+        {
+          "title": "RC常规中间继电器",
+          "model": "RC",
+          "name": "常规中间继电器",
+          "file": "RC常规中间继电器.pdf",
+          "path": "pdfs/单位置继电器/RC常规中间继电器.pdf",
+          "size": 2168147,
+          "sizeText": "2.1 MB"
+        }
+      ]
+    },
+    {
+      "name": "刀闸机构电动控制模块",
+      "count": 2,
+      "products": [
+        {
+          "title": "RN-DK-C三工位刀闸机构控制模块",
+          "model": "RN-DK-C",
+          "name": "三工位刀闸机构控制模块",
+          "file": "RN-DK-C三工位刀闸机构控制模块.pdf",
+          "path": "pdfs/刀闸机构电动控制模块/RN-DK-C三工位刀闸机构控制模块.pdf",
+          "size": 369369,
+          "sizeText": "361 KB"
+        },
+        {
+          "title": "RN-DK刀闸机构控制模块",
+          "model": "RN-DK",
+          "name": "刀闸机构控制模块",
+          "file": "RN-DK刀闸机构控制模块.pdf",
+          "path": "pdfs/刀闸机构电动控制模块/RN-DK刀闸机构控制模块.pdf",
+          "size": 397238,
+          "sizeText": "388 KB"
+        }
+      ]
+    },
+    {
+      "name": "电源或电压切换继电器",
+      "count": 6,
+      "products": [
+        {
+          "title": "RMS电源切换模块",
+          "model": "RMS",
+          "name": "电源切换模块",
+          "file": "RMS电源切换模块.pdf",
+          "path": "pdfs/电源或电压切换继电器/RMS电源切换模块.pdf",
+          "size": 1117969,
+          "sizeText": "1.1 MB"
+        },
+        {
+          "title": "RMY交流电压继电器",
+          "model": "RMY",
+          "name": "交流电压继电器",
+          "file": "RMY交流电压继电器.pdf",
+          "path": "pdfs/电源或电压切换继电器/RMY交流电压继电器.pdf",
+          "size": 1341627,
+          "sizeText": "1.3 MB"
+        },
+        {
+          "title": "RVS-DC双直流切换继电器",
+          "model": "RVS-DC",
+          "name": "双直流切换继电器",
+          "file": "RVS-DC双直流切换继电器.pdf",
+          "path": "pdfs/电源或电压切换继电器/RVS-DC双直流切换继电器.pdf",
+          "size": 828670,
+          "sizeText": "809 KB"
+        },
+        {
+          "title": "RVS-NF双交流电压无忧切换继电器",
+          "model": "RVS-NF",
+          "name": "双交流电压无忧切换继电器",
+          "file": "RVS-NF双交流电压无忧切换继电器.pdf",
+          "path": "pdfs/电源或电压切换继电器/RVS-NF双交流电压无忧切换继电器.pdf",
+          "size": 854150,
+          "sizeText": "834 KB"
+        },
+        {
+          "title": "RVS双交流电压切换继电器",
+          "model": "RVS",
+          "name": "双交流电压切换继电器",
+          "file": "RVS双交流电压切换继电器.pdf",
+          "path": "pdfs/电源或电压切换继电器/RVS双交流电压切换继电器.pdf",
+          "size": 928105,
+          "sizeText": "906 KB"
+        },
+        {
+          "title": "RVSD双母线电压切换继电器",
+          "model": "RVSD",
+          "name": "双母线电压切换继电器",
+          "file": "RVSD双母线电压切换继电器.pdf",
+          "path": "pdfs/电源或电压切换继电器/RVSD双母线电压切换继电器.pdf",
+          "size": 981479,
+          "sizeText": "958 KB"
+        }
+      ]
+    },
+    {
+      "name": "断路器保护继电器",
+      "count": 10,
+      "products": [
+        {
+          "title": "RL-CBS断路器回路监视继电器",
+          "model": "RL-CBS",
+          "name": "断路器回路监视继电器",
+          "file": "RL-CBS断路器回路监视继电器.pdf",
+          "path": "pdfs/断路器保护继电器/RL-CBS断路器回路监视继电器.pdf",
+          "size": 1129695,
+          "sizeText": "1.1 MB"
+        },
+        {
+          "title": "RL-HBJ合闸保持继电器",
+          "model": "RL-HBJ",
+          "name": "合闸保持继电器",
+          "file": "RL-HBJ合闸保持继电器.pdf",
+          "path": "pdfs/断路器保护继电器/RL-HBJ合闸保持继电器.pdf",
+          "size": 873834,
+          "sizeText": "853 KB"
+        },
+        {
+          "title": "RL-I电流启动继电器",
+          "model": "RL-I",
+          "name": "电流启动继电器",
+          "file": "RL-I电流启动继电器.pdf",
+          "path": "pdfs/断路器保护继电器/RL-I电流启动继电器.pdf",
+          "size": 980503,
+          "sizeText": "958 KB"
+        },
+        {
+          "title": "RL-PSS-H海外电源监视继电器",
+          "model": "RL-PSS-H",
+          "name": "海外电源监视继电器",
+          "file": "RL-PSS-H海外电源监视继电器.pdf",
+          "path": "pdfs/断路器保护继电器/RL-PSS-H海外电源监视继电器.pdf",
+          "size": 1058135,
+          "sizeText": "1.0 MB"
+        },
+        {
+          "title": "RL-PSS通用电源监视继电器",
+          "model": "RL-PSS",
+          "name": "通用电源监视继电器",
+          "file": "RL-PSS通用电源监视继电器.pdf",
+          "path": "pdfs/断路器保护继电器/RL-PSS通用电源监视继电器.pdf",
+          "size": 917274,
+          "sizeText": "896 KB"
+        },
+        {
+          "title": "RL-TBJ-DW直流操作继电器",
+          "model": "RL-TBJ-DW",
+          "name": "直流操作继电器",
+          "file": "RL-TBJ-DW直流操作继电器.pdf",
+          "path": "pdfs/断路器保护继电器/RL-TBJ-DW直流操作继电器.pdf",
+          "size": 894046,
+          "sizeText": "873 KB"
+        },
+        {
+          "title": "RL-TBJ-Y电压型防跳继电器",
+          "model": "RL-TBJ-Y",
+          "name": "电压型防跳继电器",
+          "file": "RL-TBJ-Y电压型防跳继电器.pdf",
+          "path": "pdfs/断路器保护继电器/RL-TBJ-Y电压型防跳继电器.pdf",
+          "size": 1053724,
+          "sizeText": "1.0 MB"
+        },
+        {
+          "title": "RL-TBJ防跳继电器",
+          "model": "RL-TBJ",
+          "name": "防跳继电器",
+          "file": "RL-TBJ防跳继电器.pdf",
+          "path": "pdfs/断路器保护继电器/RL-TBJ防跳继电器.pdf",
+          "size": 942530,
+          "sizeText": "920 KB"
+        },
+        {
+          "title": "RL-THW跳合位监视继电器",
+          "model": "RL-THW",
+          "name": "跳合位监视继电器",
+          "file": "RL-THW跳合位监视继电器.pdf",
+          "path": "pdfs/断路器保护继电器/RL-THW跳合位监视继电器.pdf",
+          "size": 1187598,
+          "sizeText": "1.1 MB"
+        },
+        {
+          "title": "RL-UI电压启动电流保持继电器",
+          "model": "RL-UI",
+          "name": "电压启动电流保持继电器",
+          "file": "RL-UI电压启动电流保持继电器.pdf",
+          "path": "pdfs/断路器保护继电器/RL-UI电压启动电流保持继电器.pdf",
+          "size": 864132,
+          "sizeText": "844 KB"
+        }
+      ]
+    },
+    {
+      "name": "集成继电器模块",
+      "count": 2,
+      "products": [
+        {
+          "title": "RN-FB非全相保护继电器",
+          "model": "RN-FB",
+          "name": "非全相保护继电器",
+          "file": "RN-FB非全相保护继电器.pdf",
+          "path": "pdfs/集成继电器模块/RN-FB非全相保护继电器.pdf",
+          "size": 1085631,
+          "sizeText": "1.0 MB"
+        },
+        {
+          "title": "RN-FT防跳及低气压闭锁继电器",
+          "model": "RN-FT",
+          "name": "防跳及低气压闭锁继电器",
+          "file": "RN-FT防跳及低气压闭锁继电器.pdf",
+          "path": "pdfs/集成继电器模块/RN-FT防跳及低气压闭锁继电器.pdf",
+          "size": 912533,
+          "sizeText": "891 KB"
+        }
+      ]
+    },
+    {
+      "name": "开关电源",
+      "count": 2,
+      "products": [
+        {
+          "title": "DPM二极管冗余模块",
+          "model": "DPM",
+          "name": "二极管冗余模块",
+          "file": "DPM二极管冗余模块.pdf",
+          "path": "pdfs/开关电源/DPM二极管冗余模块.pdf",
+          "size": 665992,
+          "sizeText": "650 KB"
+        },
+        {
+          "title": "YDSP开关电源",
+          "model": "YDSP",
+          "name": "开关电源",
+          "file": "YDSP开关电源.pdf",
+          "path": "pdfs/开关电源/YDSP开关电源.pdf",
+          "size": 810370,
+          "sizeText": "791 KB"
+        }
+      ]
+    },
+    {
+      "name": "量度继电器",
+      "count": 9,
+      "products": [
+        {
+          "title": "RML-1-1A零序过流继电器",
+          "model": "RML-1-1A",
+          "name": "零序过流继电器",
+          "file": "RML-1-1A零序过流继电器.pdf",
+          "path": "pdfs/量度继电器/RML-1-1A零序过流继电器.pdf",
+          "size": 1041707,
+          "sizeText": "1017 KB"
+        },
+        {
+          "title": "RML-DC直流电流继电器",
+          "model": "RML-DC",
+          "name": "直流电流继电器",
+          "file": "RML-DC直流电流继电器.pdf",
+          "path": "pdfs/量度继电器/RML-DC直流电流继电器.pdf",
+          "size": 1044000,
+          "sizeText": "1020 KB"
+        },
+        {
+          "title": "RML-F-DC直流反时限过流继电器",
+          "model": "RML-F-DC",
+          "name": "直流反时限过流继电器",
+          "file": "RML-F-DC直流反时限过流继电器.pdf",
+          "path": "pdfs/量度继电器/RML-F-DC直流反时限过流继电器.pdf",
+          "size": 1101347,
+          "sizeText": "1.1 MB"
+        },
+        {
+          "title": "RML-F交流反时限过流继电器",
+          "model": "RML-F",
+          "name": "交流反时限过流继电器",
+          "file": "RML-F交流反时限过流继电器.pdf",
+          "path": "pdfs/量度继电器/RML-F交流反时限过流继电器.pdf",
+          "size": 1099887,
+          "sizeText": "1.0 MB"
+        },
+        {
+          "title": "RML交流电流继电器",
+          "model": "RML",
+          "name": "交流电流继电器",
+          "file": "RML交流电流继电器.pdf",
+          "path": "pdfs/量度继电器/RML交流电流继电器.pdf",
+          "size": 1255520,
+          "sizeText": "1.2 MB"
+        },
+        {
+          "title": "RMY-DC直流电压继电器",
+          "model": "RMY-DC",
+          "name": "直流电压继电器",
+          "file": "RMY-DC直流电压继电器.pdf",
+          "path": "pdfs/量度继电器/RMY-DC直流电压继电器.pdf",
+          "size": 1332405,
+          "sizeText": "1.3 MB"
+        },
+        {
+          "title": "RMY-K-N无源三相相电压继电器",
+          "model": "RMY-K-N",
+          "name": "无源三相相电压继电器",
+          "file": "RMY-K-N无源三相相电压继电器.pdf",
+          "path": "pdfs/量度继电器/RMY-K-N无源三相相电压继电器.pdf",
+          "size": 790890,
+          "sizeText": "772 KB"
+        },
+        {
+          "title": "RMY-K无源线电压继电器",
+          "model": "RMY-K",
+          "name": "无源线电压继电器",
+          "file": "RMY-K无源线电压继电器.pdf",
+          "path": "pdfs/量度继电器/RMY-K无源线电压继电器.pdf",
+          "size": 792131,
+          "sizeText": "774 KB"
+        },
+        {
+          "title": "RMY-T同步检查继电器",
+          "model": "RMY-T",
+          "name": "同步检查继电器",
+          "file": "RMY-T同步检查继电器.pdf",
+          "path": "pdfs/量度继电器/RMY-T同步检查继电器.pdf",
+          "size": 1158132,
+          "sizeText": "1.1 MB"
+        }
+      ]
+    },
+    {
+      "name": "时间继电器",
+      "count": 4,
+      "products": [
+        {
+          "title": "RT-E-NP无源带显示时间继电器",
+          "model": "RT-E-NP",
+          "name": "无源带显示时间继电器",
+          "file": "RT-E-NP无源带显示时间继电器.pdf",
+          "path": "pdfs/时间继电器/RT-E-NP无源带显示时间继电器.pdf",
+          "size": 911671,
+          "sizeText": "890 KB"
+        },
+        {
+          "title": "RT-NP无源时间继电器",
+          "model": "RT-NP",
+          "name": "无源时间继电器",
+          "file": "RT-NP无源时间继电器.pdf",
+          "path": "pdfs/时间继电器/RT-NP无源时间继电器.pdf",
+          "size": 864709,
+          "sizeText": "844 KB"
+        },
+        {
+          "title": "RT-X循环时间继电器",
+          "model": "RT-X",
+          "name": "循环时间继电器",
+          "file": "RT-X循环时间继电器.pdf",
+          "path": "pdfs/时间继电器/RT-X循环时间继电器.pdf",
+          "size": 791267,
+          "sizeText": "773 KB"
+        },
+        {
+          "title": "RT时间继电器",
+          "model": "RT",
+          "name": "时间继电器",
+          "file": "RT时间继电器.pdf",
+          "path": "pdfs/时间继电器/RT时间继电器.pdf",
+          "size": 968488,
+          "sizeText": "946 KB"
+        }
+      ]
+    },
+    {
+      "name": "双位置继电器",
+      "count": 5,
+      "products": [
+        {
+          "title": "RDP-E互锁双位置中间继电器",
+          "model": "RDP-E",
+          "name": "互锁双位置中间继电器",
+          "file": "RDP-E互锁双位置中间继电器.pdf",
+          "path": "pdfs/双位置继电器/RDP-E互锁双位置中间继电器.pdf",
+          "size": 1413824,
+          "sizeText": "1.3 MB"
+        },
+        {
+          "title": "RDP-L LOCKOUT继电器",
+          "model": "RDP-L",
+          "name": "LOCKOUT继电器",
+          "file": "RDP-L LOCKOUT继电器.pdf",
+          "path": "pdfs/双位置继电器/RDP-L LOCKOUT继电器.pdf",
+          "size": 1155485,
+          "sizeText": "1.1 MB"
+        },
+        {
+          "title": "RDP-PTCD双位置PT重动继电器",
+          "model": "RDP-PTCD",
+          "name": "双位置PT重动继电器",
+          "file": "RDP-PTCD双位置PT重动继电器.pdf",
+          "path": "pdfs/双位置继电器/RDP-PTCD双位置PT重动继电器.pdf",
+          "size": 867115,
+          "sizeText": "847 KB"
+        },
+        {
+          "title": "RDP-S单线圈双位置中间继电器",
+          "model": "RDP-S",
+          "name": "单线圈双位置中间继电器",
+          "file": "RDP-S单线圈双位置中间继电器.pdf",
+          "path": "pdfs/双位置继电器/RDP-S单线圈双位置中间继电器.pdf",
+          "size": 954043,
+          "sizeText": "932 KB"
+        },
+        {
+          "title": "RDP双位置中间继电器",
+          "model": "RDP",
+          "name": "双位置中间继电器",
+          "file": "RDP双位置中间继电器.pdf",
+          "path": "pdfs/双位置继电器/RDP双位置中间继电器.pdf",
+          "size": 1328060,
+          "sizeText": "1.3 MB"
+        }
+      ]
+    },
+    {
+      "name": "温湿度控制器、采集器",
+      "count": 10,
+      "products": [
+        {
+          "title": "DTC-P干式变压器温度控制器",
+          "model": "DTC-P",
+          "name": "干式变压器温度控制器",
+          "file": "DTC-P干式变压器温度控制器.pdf",
+          "path": "pdfs/温湿度控制器、采集器/DTC-P干式变压器温度控制器.pdf",
+          "size": 977516,
+          "sizeText": "955 KB"
+        },
+        {
+          "title": "DTC干式变压器温度控制器",
+          "model": "DTC",
+          "name": "干式变压器温度控制器",
+          "file": "DTC干式变压器温度控制器.pdf",
+          "path": "pdfs/温湿度控制器、采集器/DTC干式变压器温度控制器.pdf",
+          "size": 1163077,
+          "sizeText": "1.1 MB"
+        },
+        {
+          "title": "TCC-FC风机控制器",
+          "model": "TCC-FC",
+          "name": "风机控制器",
+          "file": "TCC-FC风机控制器.pdf",
+          "path": "pdfs/温湿度控制器、采集器/TCC-FC风机控制器.pdf",
+          "size": 1271020,
+          "sizeText": "1.2 MB"
+        },
+        {
+          "title": "TCC-SY风机控制器",
+          "model": "TCC-SY",
+          "name": "风机控制器",
+          "file": "TCC-SY风机控制器.pdf",
+          "path": "pdfs/温湿度控制器、采集器/TCC-SY风机控制器.pdf",
+          "size": 1324226,
+          "sizeText": "1.3 MB"
+        },
+        {
+          "title": "TCC风机控制器",
+          "model": "TCC",
+          "name": "风机控制器",
+          "file": "TCC风机控制器.pdf",
+          "path": "pdfs/温湿度控制器、采集器/TCC风机控制器.pdf",
+          "size": 1214514,
+          "sizeText": "1.2 MB"
+        },
+        {
+          "title": "THC-E配网专用温湿度控制器",
+          "model": "THC-E",
+          "name": "配网专用温湿度控制器",
+          "file": "THC-E配网专用温湿度控制器.pdf",
+          "path": "pdfs/温湿度控制器、采集器/THC-E配网专用温湿度控制器.pdf",
+          "size": 1090137,
+          "sizeText": "1.0 MB"
+        },
+        {
+          "title": "THC-M多功能温湿度控制器",
+          "model": "THC-M",
+          "name": "多功能温湿度控制器",
+          "file": "THC-M多功能温湿度控制器.pdf",
+          "path": "pdfs/温湿度控制器、采集器/THC-M多功能温湿度控制器.pdf",
+          "size": 1350873,
+          "sizeText": "1.3 MB"
+        },
+        {
+          "title": "THC温湿度控制器",
+          "model": "THC",
+          "name": "温湿度控制器",
+          "file": "THC温湿度控制器.pdf",
+          "path": "pdfs/温湿度控制器、采集器/THC温湿度控制器.pdf",
+          "size": 1146188,
+          "sizeText": "1.1 MB"
+        },
+        {
+          "title": "THS温湿度变送器",
+          "model": "THS",
+          "name": "温湿度变送器",
+          "file": "THS温湿度变送器.pdf",
+          "path": "pdfs/温湿度控制器、采集器/THS温湿度变送器.pdf",
+          "size": 739220,
+          "sizeText": "722 KB"
+        },
+        {
+          "title": "TK热电偶温度采集器",
+          "model": "TK",
+          "name": "热电偶温度采集器",
+          "file": "TK热电偶温度采集器.pdf",
+          "path": "pdfs/温湿度控制器、采集器/TK热电偶温度采集器.pdf",
+          "size": 1125733,
+          "sizeText": "1.1 MB"
+        }
+      ]
+    },
+    {
+      "name": "信号报警器",
+      "count": 5,
+      "products": [
+        {
+          "title": "FA-I-TB一体式多功能故障信号报警器",
+          "model": "FA-I-TB",
+          "name": "一体式多功能故障信号报警器",
+          "file": "FA-I-TB一体式多功能故障信号报警器.pdf",
+          "path": "pdfs/信号报警器/FA-I-TB一体式多功能故障信号报警器.pdf",
+          "size": 1282915,
+          "sizeText": "1.2 MB"
+        },
+        {
+          "title": "FA-I-U一体式简易故障信号报警器",
+          "model": "FA-I-U",
+          "name": "一体式简易故障信号报警器",
+          "file": "FA-I-U一体式简易故障信号报警器.pdf",
+          "path": "pdfs/信号报警器/FA-I-U一体式简易故障信号报警器.pdf",
+          "size": 887387,
+          "sizeText": "867 KB"
+        },
+        {
+          "title": "FA-I一体式故障信号报警器",
+          "model": "FA-I",
+          "name": "一体式故障信号报警器",
+          "file": "FA-I一体式故障信号报警器.pdf",
+          "path": "pdfs/信号报警器/FA-I一体式故障信号报警器.pdf",
+          "size": 1069512,
+          "sizeText": "1.0 MB"
+        },
+        {
+          "title": "FA16分体式信号报警器",
+          "model": "FA16",
+          "name": "分体式信号报警器",
+          "file": "FA16分体式信号报警器.pdf",
+          "path": "pdfs/信号报警器/FA16分体式信号报警器.pdf",
+          "size": 907419,
+          "sizeText": "886 KB"
+        },
+        {
+          "title": "FA32-FA48分体式信号报警器",
+          "model": "FA32-FA48",
+          "name": "分体式信号报警器",
+          "file": "FA32-FA48分体式信号报警器.pdf",
+          "path": "pdfs/信号报警器/FA32-FA48分体式信号报警器.pdf",
+          "size": 725985,
+          "sizeText": "709 KB"
+        }
+      ]
+    }
+  ]
+}

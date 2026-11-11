@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b2a6b">
+<meta name="description" content="南京华用电气产品手册 · 手机随时查找产品PDF并分享到微信">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="华用产品手册">
+<title>南京华用电气 · 产品手册</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231d4ed8'/%3E%3Cpath d='M13 3 5 13h5l-1 8 8-10h-5l1-8z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+:root{
+  --blue-900:#0b2a6b;--blue-700:#1d4ed8;--blue-600:#2563eb;--blue-500:#3b82f6;--cyan:#0ea5e9;
+  --blue-50:#eff6ff;--blue-100:#dbeafe;--blue-200:#bfdbfe;
+  --wechat:#07c160;--wechat-dark:#06a552;
+  --ink:#0f172a;--ink-2:#334155;--muted:#64748b;--line:#e2e8f0;
+  --bg:#eef2f7;--surface:#fff;--surface-2:#f8fafc;
+  --success:#16a34a;--warning:#d97706;--danger:#dc2626;
+  --r-sm:10px;--r-card:14px;--r-pill:999px;
+  --sh-card:0 1px 2px rgba(15,23,42,.06),0 2px 6px rgba(15,23,42,.05);
+  --sh-pop:0 8px 30px rgba(15,23,42,.16);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  color:var(--ink);font-size:15px;line-height:1.6;
+  background:radial-gradient(70% 45% at 50% -8%,rgba(37,99,235,.07),transparent 60%),var(--bg);
+  -webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom);
+}
+h1,h2,h3,p{margin:0}
+[hidden]{display:none!important}
+button{font-family:inherit;cursor:pointer}
+b{font-weight:600}
+/* 滚动条 */
+*{scrollbar-width:thin;scrollbar-color:#cbd5e1 transparent}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:999px;border:2px solid transparent;background-clip:content-box}
+::-webkit-scrollbar-thumb:hover{background:#94a3b8;background-clip:content-box}
+
+/* 顶部品牌区 */
+.hero{position:relative;overflow:hidden;color:#fff;padding:calc(18px + env(safe-area-inset-top)) 16px 20px;
+  background:radial-gradient(120% 150% at 100% 0%,rgba(14,165,233,.40),transparent 52%),radial-gradient(110% 130% at 0% 0%,rgba(59,130,246,.55),transparent 55%),linear-gradient(135deg,#0b2a6b,#1d4ed8);}
+.hero-in{max-width:760px;margin:0 auto;position:relative;z-index:1;display:flex;align-items:center;gap:12px}
+.logo{flex:0 0 auto;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28)}
+.logo svg{width:24px;height:24px}
+.hero-txt{flex:1 1 auto;min-width:0}
+.hero-txt h1{font-size:20px;font-weight:700;letter-spacing:.5px;line-height:1.25}
+.hero-txt p{font-size:12px;color:rgba(255,255,255,.82);margin-top:2px}
+.hero-stats{display:flex;gap:16px;margin:16px auto 0;max-width:760px;position:relative;z-index:1}
+.stat{display:flex;flex-direction:column}
+.stat b{font-size:20px;font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat span{font-size:11px;color:rgba(255,255,255,.78);margin-top:2px}
+.hero-bolt{position:absolute;right:-18px;top:-26px;width:170px;height:170px;opacity:.13;z-index:0;pointer-events:none}
+
+/* 吸顶工具栏 */
+.toolbar{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(15,23,42,.05)}
+.toolbar-in{max-width:760px;margin:0 auto;padding:12px 16px 0}
+.search{position:relative;display:flex;align-items:center}
+.search .s-ic{position:absolute;left:12px;width:20px;height:20px;color:var(--muted);pointer-events:none}
+.search input{width:100%;height:46px;border:1px solid var(--line);border-radius:var(--r-sm);background:var(--surface-2);padding:0 42px 0 40px;font-size:15px;color:var(--ink);outline:none;transition:border-color .18s,box-shadow .18s,background .18s}
+.search input::placeholder{color:#94a3b8}
+.search input:focus{border-color:var(--blue-500);background:#fff;box-shadow:0 0 0 3px rgba(37,99,235,.14)}
+.search .clear{position:absolute;right:8px;width:30px;height:30px;border:0;border-radius:8px;background:#e2e8f0;color:var(--ink-2);display:grid;place-items:center}
+.search .clear svg{width:16px;height:16px}
+.search .clear:hover{background:#cbd5e1}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:12px 0;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 12px;border:1px solid var(--line);border-radius:var(--r-pill);background:var(--surface);color:var(--ink-2);font-size:13px;font-weight:500;white-space:nowrap;transition:transform .15s,background .15s,color .15s,border-color .15s}
+.chip:hover{border-color:var(--blue-200);background:var(--blue-50)}
+.chip:active{transform:scale(.96)}
+.chip .chip-n{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+.chip.active{background:var(--blue-600);border-color:var(--blue-600);color:#fff}
+.chip.active .chip-n{color:rgba(255,255,255,.8)}
+
+/* 主体 */
+.wrap{max-width:760px;margin:0 auto;padding:16px 16px 40px}
+#content{scroll-margin-top:124px}
+.meta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:4px 2px 14px;font-size:13px;color:var(--muted)}
+.meta b{color:var(--ink);font-variant-numeric:tabular-nums}
+.meta-clear{border:1px solid var(--line);background:var(--surface);color:var(--blue-700);font-size:12px;font-weight:600;height:30px;padding:0 12px;border-radius:var(--r-pill)}
+.meta-clear:hover{background:var(--blue-50);border-color:var(--blue-200)}
+
+.cat{margin-bottom:26px}
+.cat-head{display:flex;align-items:center;gap:10px;margin:0 2px 12px}
+.cat-bar{width:4px;height:18px;border-radius:2px;background:linear-gradient(var(--blue-500),var(--cyan))}
+.cat-head h2{font-size:16px;font-weight:600;color:var(--ink)}
+.cat-n{font-size:11px;font-weight:600;color:var(--muted);background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r-pill);padding:1px 8px;font-variant-numeric:tabular-nums}
+
+.cards{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:620px){.cards{grid-template-columns:1fr 1fr}}
+.card{position:relative;display:flex;flex-direction:column;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);padding:14px;box-shadow:var(--sh-card);cursor:pointer;transition:transform .18s ease-out,box-shadow .18s ease-out,border-color .18s}
+.card:hover{transform:translateY(-2px);box-shadow:var(--sh-pop);border-color:var(--blue-200)}
+.card:focus-visible{outline:2px solid var(--blue-500);outline-offset:2px}
+.card-top{display:flex;align-items:flex-start;gap:10px}
+.badge{flex:0 0 auto;font-size:12px;font-weight:700;color:var(--blue-700);background:var(--blue-50);border:1px solid var(--blue-200);border-radius:8px;padding:3px 8px;font-variant-numeric:tabular-nums;letter-spacing:.3px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-name{flex:1 1 auto;font-size:15px;font-weight:600;color:var(--ink);line-height:1.45;word-break:break-word}
+.card-meta{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.tag{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r-pill);padding:1px 9px;font-size:11px;color:var(--ink-2)}
+.size{font-variant-numeric:tabular-nums}
+.card-actions{display:flex;gap:8px;margin-top:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:42px;border-radius:var(--r-sm);font-size:14px;font-weight:600;border:1px solid transparent;transition:transform .12s,background .15s,border-color .15s,color .15s,opacity .15s}
+.btn svg{width:18px;height:18px;flex:0 0 auto}
+.btn:active{transform:scale(.97)}
+.btn:focus-visible{outline:2px solid var(--blue-500);outline-offset:2px}
+.btn-preview{flex:1 1 auto;background:var(--blue-50);border-color:var(--blue-200);color:var(--blue-700)}
+.btn-preview:hover{background:var(--blue-100)}
+.btn-share{flex:1.5 1 auto;background:var(--wechat);color:#fff;box-shadow:0 2px 8px rgba(7,193,96,.28)}
+.btn-share:hover{background:var(--wechat-dark)}
+.btn-share.loading{opacity:.75}
+.btn-link{flex:0 0 42px;width:42px;background:var(--surface);border-color:var(--line);color:var(--muted)}
+.btn-link:hover{color:var(--blue-700);border-color:var(--blue-200);background:var(--blue-50)}
+.btn-primary{background:var(--blue-600);color:#fff;padding:0 18px}
+.btn-primary:hover{background:var(--blue-700)}
+.btn[disabled]{cursor:default}
+
+/* 空态 */
+.empty{text-align:center;padding:56px 20px;color:var(--muted)}
+.empty-ic{width:64px;height:64px;margin:0 auto 16px;border-radius:50%;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);color:#94a3b8}
+.empty-ic svg{width:30px;height:30px}
+.empty h3{font-size:16px;font-weight:600;color:var(--ink-2);margin-bottom:6px}
+.empty p{font-size:14px;margin-bottom:20px}
+
+/* 帮助 */
+.help{margin-top:8px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);box-shadow:var(--sh-card);overflow:hidden}
+.help summary{list-style:none;display:flex;align-items:center;gap:10px;padding:14px 16px;font-size:14px;font-weight:600;color:var(--ink-2);cursor:pointer}
+.help summary::-webkit-details-marker{display:none}
+.help summary .h-ic{width:20px;height:20px;color:var(--blue-600);flex:0 0 auto}
+.help summary .chev{margin-left:auto;width:18px;height:18px;color:var(--muted);transition:transform .2s}
+.help[open] summary .chev{transform:rotate(180deg)}
+.help-body{padding:0 16px 16px;font-size:13.5px;color:var(--ink-2);line-height:1.7}
+.help-body ol{margin:0;padding-left:20px}
+.help-body li{margin-bottom:6px}
+.help-note{margin-top:10px;padding:10px 12px;background:var(--blue-50);border:1px solid var(--blue-100);border-radius:var(--r-sm);font-size:12.5px;color:var(--ink-2)}
+.help-note b{color:var(--blue-700)}
+
+.foot{text-align:center;margin-top:24px;font-size:12px;color:#94a3b8;line-height:1.8}
+.foot b{color:var(--muted);font-weight:600}
+
+/* 回到顶部 */
+.fab{position:fixed;right:16px;bottom:calc(20px + env(safe-area-inset-bottom));width:46px;height:46px;border-radius:50%;border:0;background:var(--blue-600);color:#fff;display:grid;place-items:center;box-shadow:var(--sh-pop);opacity:0;transform:translateY(12px) scale(.9);pointer-events:none;transition:opacity .2s,transform .2s;z-index:45}
+.fab svg{width:22px;height:22px}
+.fab.show{opacity:1;transform:none;pointer-events:auto}
+.fab:hover{background:var(--blue-700)}
+
+/* 提示条 */
+.toast{position:fixed;left:50%;bottom:calc(28px + env(safe-area-inset-bottom));transform:translate(-50%,16px);max-width:min(92vw,460px);background:var(--ink);color:#fff;font-size:13.5px;line-height:1.5;padding:12px 16px;border-radius:var(--r-sm);box-shadow:var(--sh-pop);opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;z-index:100;text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.toast.ok{background:#065f46}
+.toast.info{background:var(--blue-900)}
+
+/* 入场动画 */
+@keyframes cardIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.card.enter{animation:cardIn .22s ease-out both}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <svg class="hero-bolt" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+  <div class="hero-in">
+    <div class="logo"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
+    <div class="hero-txt">
+      <h1 id="brand">南京华用电气 · 产品手册</h1>
+      <p>手机随时查找 · 一键分享到微信</p>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><b id="stat-total">—</b><span>款产品</span></div>
+    <div class="stat"><b id="stat-cat">—</b><span>个分类</span></div>
+    <div class="stat"><b id="stat-size">—</b><span>资料总量</span></div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="toolbar-in">
+    <div class="search">
+      <svg class="s-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="search" type="search" inputmode="search" autocomplete="off" placeholder="搜索型号或名称，如 RML、防跳" aria-label="搜索产品">
+      <button class="clear" id="clear" hidden aria-label="清空搜索"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <nav class="chips" id="chips" aria-label="产品分类"></nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="meta" id="meta"></div>
+  <div id="content"></div>
+
+  <details class="help">
+    <summary>
+      <svg class="h-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      怎么把 PDF 发到微信？
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+    </summary>
+    <div class="help-body">
+      <ol>
+        <li>找到产品，点绿色的 <b>「发微信」</b> 按钮。</li>
+        <li>手机会弹出系统分享面板，选择 <b>微信</b>。</li>
+        <li>选中客户或群聊，点发送 —— PDF 文件就发过去了。</li>
+      </ol>
+      <div class="help-note">
+        <b>小提示：</b>如果分享面板没出现，会自动打开 PDF，这时用浏览器右上角的「分享 / 发送」菜单同样能发到微信。也可以点卡片上的 <b>链接图标</b> 复制网址，直接粘贴到微信发给客户。建议用手机自带浏览器（Safari / Chrome）打开本页，体验最好。
+      </div>
+    </div>
+  </details>
+
+  <div class="foot">
+    <div><b id="foot-company">南京华用电气</b> · 产品手册手机版</div>
+    <div id="foot-updated"></div>
+  </div>
+</main>
+
+<button class="fab" id="fab" aria-label="回到顶部"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="manifest.js"></script>
+<script>
+(function(){
+  "use strict";
+  var M = window.__MANIFEST__ || {categories:[],total:0,categoryCount:0,totalSizeText:""};
+  var ALL = [];
+  (M.categories||[]).forEach(function(c){ (c.products||[]).forEach(function(p){
+    ALL.push({title:p.title,model:p.model,name:p.name,file:p.file,path:p.path,sizeText:p.sizeText,category:c.name});
+  });});
+
+  var ICON = {
+    eye:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>',
+    chat:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>',
+    link:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>',
+    file:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>'
+  };
+
+  function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+  function escA(s){return esc(s).replace(/'/g,"&#39;");}
+  function norm(s){return String(s==null?"":s).toLowerCase().replace(/[\s\-_·、,，.]/g,"");}
+  function encodePath(rel){return rel.split("/").map(encodeURIComponent).join("/");}
+  function assetUrl(rel){return new URL(encodePath(rel),document.baseURI).href;}
+  ALL.forEach(function(p){p._hay=norm(p.title+" "+p.category+" "+p.model+" "+p.name);});
+
+  var state={query:"",category:"全部"};
+  var $=function(s){return document.querySelector(s);};
+  var content=$("#content"),meta=$("#meta"),chips=$("#chips"),searchInput=$("#search"),clearBtn=$("#clear"),fab=$("#fab"),toastEl=$("#toast");
+
+  function matches(p){
+    if(state.category!=="全部" && p.category!==state.category) return false;
+    var q=norm(state.query);
+    return !q || p._hay.indexOf(q)!==-1;
+  }
+  function filtered(){return ALL.filter(matches);}
+
+  function renderChips(){
+    var cats=[{name:"全部",count:ALL.length}].concat((M.categories||[]).map(function(c){return {name:c.name,count:c.count};}));
+    chips.innerHTML=cats.map(function(c){
+      return '<button class="chip'+(c.name===state.category?" active":"")+'" data-cat="'+escA(c.name)+'">'+esc(c.name)+'<span class="chip-n">'+c.count+'</span></button>';
+    }).join("");
+  }
+
+  function cardHtml(p,i,animate,showCat){
+    var delay=animate?Math.min(i,14)*30:0;
+    var cls="card"+(animate?" enter":"");
+    var st=animate?' style="animation-delay:'+delay+'ms"':"";
+    var badge=p.model?'<span class="badge">'+esc(p.model)+'</span>':"";
+    var cat=showCat?'<span class="tag">'+esc(p.category)+'</span>':"";
+    return '<article class="'+cls+'"'+st+' data-path="'+escA(p.path)+'" data-file="'+escA(p.file)+'" data-title="'+escA(p.title)+'" tabindex="0" role="button" aria-label="预览 '+escA(p.title)+'">'
+      +'<div class="card-top">'+badge+'<div class="card-name">'+esc(p.name)+'</div></div>'
+      +'<div class="card-meta">'+cat+'<span class="size">'+esc(p.sizeText)+'</span></div>'
+      +'<div class="card-actions">'
+      +'<button class="btn btn-preview" data-act="preview">'+ICON.eye+'<span>预览</span></button>'
+      +'<button class="btn btn-share" data-act="share" title="分享PDF文件到微信">'+ICON.chat+'<span>发微信</span></button>'
+      +'<button class="btn btn-link" data-act="link" title="复制链接" aria-label="复制链接">'+ICON.link+'</button>'
+      +'</div></article>';
+  }
+
+  function renderMeta(n,filtering){
+    var txt=filtering?('找到 <b>'+n+'</b> 款'):('共 <b>'+n+'</b> 款产品 · '+(M.categoryCount||0)+' 个分类');
+    meta.innerHTML='<span>'+txt+'</span>'+(filtering?'<button class="meta-clear" id="metaClear">清空筛选</button>':"");
+    var mc=$("#metaClear"); if(mc) mc.addEventListener("click",resetFilters);
+  }
+
+  function emptyHtml(){
+    return '<div class="empty"><div class="empty-ic">'+ICON.file+'</div><h3>没有找到匹配的产品</h3><p>换个关键词试试，比如型号「RML」或名称「防跳」「温湿度」。</p><button class="btn btn-primary" id="emptyClear">清空搜索</button></div>';
+  }
+
+  function render(animate){
+    var list=filtered();
+    var filtering=!!norm(state.query)||state.category!=="全部";
+    var grouping=!norm(state.query)&&state.category==="全部";
+    renderMeta(list.length,filtering);
+    if(!list.length){content.innerHTML=emptyHtml();var ec=$("#emptyClear");if(ec)ec.addEventListener("click",resetFilters);return;}
+    var html="";
+    if(grouping){
+      (M.categories||[]).forEach(function(c){
+        var ps=list.filter(function(p){return p.category===c.name;});
+        if(!ps.length) return;
+        html+='<section class="cat"><div class="cat-head"><span class="cat-bar"></span><h2>'+esc(c.name)+'</h2><span class="cat-n">'+ps.length+'</span></div><div class="cards">'+ps.map(function(p,i){return cardHtml(p,i,animate,false);}).join("")+'</div></section>';
+      });
+    }else{
+      html='<div class="cards">'+list.map(function(p,i){return cardHtml(p,i,animate,true);}).join("")+'</div>';
+    }
+    content.innerHTML=html;
+  }
+
+  function resetFilters(){
+    state.query="";state.category="全部";searchInput.value="";clearBtn.hidden=true;
+    renderChips();render(true);
+  }
+
+  /* ---- 动作 ---- */
+  function openPreview(p){window.open(assetUrl(p.path),"_blank","noopener");}
+
+  function setBtnLoading(btn,on){
+    var s=btn.querySelector("span");
+    if(on){btn.dataset.old=s?s.textContent:"";if(s)s.textContent="准备中";btn.classList.add("loading");btn.disabled=true;}
+    else{if(s&&btn.dataset.old!=null)s.textContent=btn.dataset.old;btn.classList.remove("loading");btn.disabled=false;}
+  }
+
+  function sharePdf(p,btn){
+    var url=assetUrl(p.path);
+    var supported=false;
+    try{supported=!!(navigator.canShare&&navigator.canShare({files:[new File([new Blob([""])],"t.pdf",{type:"application/pdf"})]}));}catch(e){supported=false;}
+    if(supported){
+      setBtnLoading(btn,true);
+      fetch(url).then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.blob();}).then(function(blob){
+        var file=new File([blob],p.file,{type:"application/pdf"});
+        if(navigator.canShare&&navigator.canShare({files:[file]})){
+          return navigator.share({files:[file],title:p.title,text:p.title}).then(function(){toast("已调起分享面板，选择「微信」发送给客户","ok");});
+        }
+        throw new Error("cannot share file");
+      }).catch(function(err){
+        if(err&&err.name==="AbortError")return;
+        window.open(url,"_blank","noopener");
+        toast("已打开PDF，请用浏览器「分享」菜单发到微信","info");
+      }).then(function(){setBtnLoading(btn,false);});
+    }else{
+      window.open(url,"_blank","noopener");
+      toast("已打开PDF，请用浏览器「分享」菜单发到微信","info");
+    }
+  }
+
+  function copyLink(p){
+    var url=assetUrl(p.path);
+    function done(){toast("链接已复制，可粘贴到微信发给客户","ok");}
+    function fallback(){
+      var ta=document.createElement("textarea");
+      ta.value=url;ta.style.position="fixed";ta.style.opacity="0";
+      document.body.appendChild(ta);ta.select();
+      var ok=false;try{ok=document.execCommand("copy");}catch(e){}
+      document.body.removeChild(ta);
+      if(ok)done();else toast("复制失败，请打开预览后复制地址栏链接","info");
+    }
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(done).catch(fallback);
+    }else fallback();
+  }
+
+  var toastTimer;
+  function toast(msg,type){
+    toastEl.textContent=msg;toastEl.className="toast show "+(type||"");
+    clearTimeout(toastTimer);toastTimer=setTimeout(function(){toastEl.className="toast";},2800);
+  }
+
+  /* ---- 事件 ---- */
+  chips.addEventListener("click",function(e){
+    var b=e.target.closest(".chip");if(!b)return;
+    state.category=b.dataset.cat;renderChips();render(true);
+    if(window.scrollY>4) content.scrollIntoView({behavior:"smooth",block:"start"});
+  });
+  content.addEventListener("click",function(e){
+    var card=e.target.closest(".card");if(!card)return;
+    var p={path:card.dataset.path,file:card.dataset.file,title:card.dataset.title};
+    var btn=e.target.closest(".btn");
+    if(btn){e.stopPropagation();var a=btn.dataset.act;if(a==="preview")openPreview(p);else if(a==="share")sharePdf(p,btn);else if(a==="link")copyLink(p);return;}
+    openPreview(p);
+  });
+  content.addEventListener("keydown",function(e){
+    if((e.key==="Enter"||e.key===" ")&&e.target.classList&&e.target.classList.contains("card")){
+      e.preventDefault();var c=e.target;openPreview({path:c.dataset.path,file:c.dataset.file,title:c.dataset.title});
+    }
+  });
+  searchInput.addEventListener("input",function(){state.query=searchInput.value;clearBtn.hidden=!searchInput.value;render(false);});
+  clearBtn.addEventListener("click",function(){searchInput.value="";state.query="";clearBtn.hidden=true;render(false);searchInput.focus();});
+  window.addEventListener("scroll",function(){fab.classList.toggle("show",window.scrollY>420);},{passive:true});
+  fab.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"});});
+
+  /* ---- 初始化 ---- */
+  $("#stat-total").textContent=M.total||ALL.length;
+  $("#stat-cat").textContent=M.categoryCount||(M.categories||[]).length;
+  $("#stat-size").textContent=M.totalSizeText||"";
+  $("#brand").textContent=(M.company||"南京华用电气")+" · "+(M.title||"产品手册");
+  $("#foot-company").textContent=M.company||"南京华用电气";
+  if(M.generated){var d=new Date(M.generated);$("#foot-updated").textContent="更新于 "+d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
+  document.title=(M.company||"南京华用电气")+" · "+(M.title||"产品手册");
+  try{
+    var qs=new URLSearchParams(location.search);
+    var q0=qs.get("q"),cat0=qs.get("cat");
+    if(q0){state.query=q0;searchInput.value=q0;clearBtn.hidden=false;}
+    if(cat0&&(cat0==="全部"||(M.categories||[]).some(function(c){return c.name===cat0;}))) state.category=cat0;
+  }catch(e){}
+  renderChips();render(true);
+})();
+</script>
+</body>
+</html>
