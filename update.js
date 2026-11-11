@@ -20,7 +20,13 @@ try {
   } else {
     console.log('内容没有变化，无需提交。');
   }
-  run('git push');
+  try {
+    run('git push');
+  } catch (e) {
+    // 国内网络直连 github.com 偶尔被重置，本机代理可用时走代理重试
+    console.log('直连推送失败，尝试通过本地代理 127.0.0.1:7890 重试…');
+    run('git -c http.proxy=http://127.0.0.1:7890 push');
+  }
   const cfg = require('./config.json');
   console.log('\n✓ 更新完成！线上网址：' + (cfg.siteUrl || '(尚未配置，见使用说明.txt)'));
   console.log('  GitHub Pages 生效约需 1 分钟，稍后刷新手机网页即可看到新内容。');
